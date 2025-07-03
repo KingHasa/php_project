@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Addict</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #004466;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #002233;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;  
+        }
+        .logo span {
+            color: #ffaa00;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .hero {
+            text-align: center;
+            margin-top: 20px;
+            padding: 0 10px;
+        }
+        .hero h1 {
+            font-size: 36px;
+        }
+        .services {
+            background-image: url(Step.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+        .service-box {
+            background: white;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 250px;
+        }
+        .service-box h3 {
+            color: #004466;
+        }
+        .service-box a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #ffaa00;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 2px solid #ffaa00;
+            transition: background 0.3s, color 0.3s;
+        }
+        .service-box a:hover {
+            color: white;
+            background: #ffaa00;
+        }
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+                padding-top: 10px;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Adjust <span>UR </span>Future</div>
+        <ul>
+            <li><a href="cv_create.php">CV Creating Help</a></li>
+            <li><a href="mcq_exam.php">Preparation</a></li>
+            <li><a href="job.php">Job Search</a></li>
+            <li><a href="contact.php">Contact Us</a></li>
+        </ul>
+        <form action="logout.php" method="post" style="margin:0;">
+            <button type="submit" style="background:#ffaa00;color:#002233;border:none;padding:8px 18px;border-radius:5px;font-size:16px;cursor:pointer;">Logout</button>
+        </form>
+    </nav>
+
+    <header>
+        <div class="hero">
+            <h1>Kickstart and <br> Find your career</h1>
+            <p>Expert tools and features to achieve your career goals</p>
+        </div>
+    </header>
+
+    <section class="services">
+        <div class="service-box">
+            <h3>CV Making Help</h3>
+            <p>Professional review, writing, plus unique templates to ensure you land the job.</p>
+            <a href="cv_create.php">See options →</a>
+        </div>
+        <div class="service-box">
+            <h3>Preparation</h3>
+            <p>Smart and accurate career matching so you can plan your next move.</p>
+            <a href="mcq_exam.php">Start the test →</a>
+        </div>
+        <div class="service-box">
+            <h3>Job Search</h3>
+            <p>Thousands of exciting job opportunities with companies around the world.</p>
+            <a href="job.php">Browse jobs →</a>
+        </div>
+        <div class="service-box">
+            <h3>Contact Us</h3>
+            <p>We are here to help your career development. If you need more information, contact us.</p>
+            <a href="contact.php">Contact Us →</a>
+        </div>
+    </section>
+</body>
+</html>
